@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Home from'./components/Home'
 import HowItWorks from './components/HowItWorks'
 import LogoScroll from './components/LogoScroll'
 import Collection from './components/collection'

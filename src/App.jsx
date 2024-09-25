@@ -2,8 +2,6 @@ import React from 'react'
 
 import HowItWorks from './components/HowItWorks'
 import LogoScroll from './components/LogoScroll'
-import Home from './components/Home'
-import { BiCollection } from 'react-icons/bi'
 import Collection from './components/collection'
 import ButtonList from './components/ButtonList'
 import ButtonCards from './components/ButtonCards'

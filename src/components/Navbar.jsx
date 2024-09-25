@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import logo from "../assets/images/logo.png"
 import { HiBars2, HiMiniXMark } from "react-icons/hi2";
-import {  SignedIn, SignedOut,SignInButton, UserButton, useUser } from '@clerk/clerk-react'
+
 // React
 
 
@@ -65,7 +65,6 @@ const Navbar = () => {
     }
         }
     }
-  const {isLoaded,isSignedIn, user}= useUser()
 
   return (
     <div className='w-full fixed  top-0 pt-3 py-4 z-40 bg-black'>
@@ -80,14 +79,9 @@ const Navbar = () => {
                         </button>        
                 </div>
                 <div className="order-3 hidden md:flex ">
-                <SignedOut>
-                <SignInButton>
+                
                     <button className='px-5 2xl:px-10 2xl:py-4 2xl:text-lg hover:bg-orange rounded-full py-2 text-white border border-white text-sm font-semibold'>Login/Register</button>
-                    </SignInButton>
-                        </SignedOut>
-                        <SignedIn>
-                        <UserButton/>
-                         </SignedIn>
+                    
                         
                 </div>
 
@@ -107,14 +101,9 @@ const Navbar = () => {
                         ))}
                         </ul>
                         <div className="flex md:hidden gap-5 justify-center items-center pt-4">
-                        <SignedOut>
-                        <SignInButton>
+                       
                         <button onClick={toggleNavbar} className='px-5 hover:bg-orange rounded-full py-2 text-white border border-white text-sm font-semibold'>Login/Register</button>
-                        </SignInButton>
-                        </SignedOut>
-                        <SignedIn>
-                        <UserButton/>
-                         </SignedIn> 
+                      
                         </div>
                         
                     </div>
